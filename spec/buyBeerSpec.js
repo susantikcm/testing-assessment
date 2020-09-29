@@ -9,7 +9,7 @@ describe('When can Buy Beer', () => {
 
             const result = canGregBuyBeer();
 
-            expect(result).toBe(`Greg is ${greg.age}, he can buy beer!`);
+            expect(result).toBe(`Greg is ${age18Above}, he can buy beer!`);
             greg.age = gregAge;
         });
     });
@@ -21,7 +21,7 @@ describe('When can Buy Beer', () => {
 
             const result = canGregBuyBeer();
 
-            expect(result).toBe(`Greg is ${greg.age}, he can't buy beer :(`);
+            expect(result).toBe(`Greg is ${age18Above}, he can't buy beer :(`);
             greg.age = gregAge;
         });
     });
