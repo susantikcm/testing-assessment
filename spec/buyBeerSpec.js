@@ -1,11 +1,11 @@
 describe('When can Buy Beer', () => {
-    const age18Above = 19;
+    const ageAbove18 = 19;
     const ageUnder18 = 15;
     const gregAge = greg.age;
 
     describe('When age is 18', () => {
-        it(`Greg is ${age18Above}, he can buy beer!`, () => {
-            greg.age = age18Above;
+        it(`Greg is ${ageAbove18}, he can buy beer!`, () => {
+            greg.age = ageAbove18;
 
             const result = canGregBuyBeer();
 
